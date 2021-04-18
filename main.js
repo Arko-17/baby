@@ -5,7 +5,7 @@ function preload(){
 song=loadSound("alarm.mp3");
 }
 function draw(){
-image(video,0,0,640,420);
+image(video,0,0,380,380);
 if (status !=""){
     r=random(255);
     g=random(255);
@@ -25,7 +25,7 @@ if (status !=""){
 }
 else{
     document.getElementById("status").innerHTML="Status: Baby not Detected";
-    song.start();
+    song.play();
 }
 }
 function setup(){
